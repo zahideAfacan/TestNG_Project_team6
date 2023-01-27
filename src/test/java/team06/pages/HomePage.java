@@ -16,7 +16,7 @@ public class HomePage {
     @FindBy(xpath = "//input[@type='search']")
     public WebElement search;
 
-    @FindBy(xpath = "//*[@id=\"menu-item-1079\"]/a")
+    @FindBy(xpath = "(//*[text()='My Account'])[2]")
     public WebElement myAccount;
 
 }

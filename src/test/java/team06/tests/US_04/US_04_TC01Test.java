@@ -8,6 +8,7 @@ import team06.utilities.Driver;
 
 import java.util.logging.Handler;
 
+import static team06.utilities.ReusableMethod2.clickElementByJS;
 import static team06.utilities.ReusableMethods.waitFor;
 
 public class US_04_TC01Test {
@@ -15,8 +16,8 @@ public class US_04_TC01Test {
     public void US04_TC01Test(){
         HomePage homePage=new HomePage();
         Driver.getDriver().get(ConfigReader.getProperty("url_allover_commerce"));
-        homePage.myAccount.click();
-        waitFor(2);
+        clickElementByJS(homePage.myAccount);
+
 
 
 
