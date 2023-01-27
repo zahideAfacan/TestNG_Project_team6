@@ -3,7 +3,7 @@ package team06.utilities;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 
-public class ReusableMethod2 {
+public class JSUtils {
     //This method will takes two parameter: WebElement, and WebDriver
     //When you pass the element, JS will click on that element
     public static void clickElementByJS(WebElement element) {

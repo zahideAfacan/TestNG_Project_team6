@@ -6,10 +6,7 @@ import team06.pages.HomePage;
 import team06.utilities.ConfigReader;
 import team06.utilities.Driver;
 
-import java.util.logging.Handler;
-
-import static team06.utilities.ReusableMethod2.clickElementByJS;
-import static team06.utilities.ReusableMethods.waitFor;
+import static team06.utilities.JSUtils.clickElementByJS;
 
 public class US_04_TC01Test {
     @Test
