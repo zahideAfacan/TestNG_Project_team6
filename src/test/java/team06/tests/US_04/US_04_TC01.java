@@ -8,7 +8,7 @@ import team06.utilities.Driver;
 
 import static team06.utilities.JSUtils.clickElementByJS;
 
-public class US_04_TC01Test {
+public class US_04_TC01 {
     @Test
     public void US04_TC01Test(){
         HomePage homePage=new HomePage();
