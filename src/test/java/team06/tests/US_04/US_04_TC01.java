@@ -15,7 +15,7 @@ import static team06.utilities.ReusableMethods.waitFor;
 public class US_04_TC01 {
     @Test
     public void US04_TC01Test(){
-        HomePage homePage=new HomePage();
+        HomePage   homePage=new HomePage();
         LoginPage loginPage=new LoginPage();
         MyAccountPage myAccountPage=new MyAccountPage();
         EditShippingAddressPage editShippingAddressPage=new EditShippingAddressPage();
