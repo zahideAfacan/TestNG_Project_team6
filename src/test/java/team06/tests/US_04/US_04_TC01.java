@@ -5,8 +5,7 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.Test;
-import team06.pages.HomePage;
-import team06.pages.LoginPage;
+import team06.pages.*;
 import team06.utilities.ConfigReader;
 import team06.utilities.Driver;
 
@@ -18,6 +17,9 @@ public class US_04_TC01 {
     public void US04_TC01Test(){
         HomePage homePage=new HomePage();
         LoginPage loginPage=new LoginPage();
+        MyAccountPage myAccountPage=new MyAccountPage();
+        EditShippingAddressPage editShippingAddressPage=new EditShippingAddressPage();
+        AddressesPage addressesPage=new AddressesPage();
         Driver.getDriver().get(ConfigReader.getProperty("url_allover_commerce"));
 
         homePage.signIn.click();
@@ -42,35 +44,34 @@ public class US_04_TC01 {
 
 
         //locate Adresses and click
-        homePage.addresses.click();
-        homePage.editShippingAddress.click();
+        myAccountPage.addresses.click();
+        addressesPage.editShippingAddress.click();
         waitFor(1);
 
         //enter first name
-        homePage.shippingfirstName.clear();
-        homePage.shippingfirstName.sendKeys("Gulcin");
+        editShippingAddressPage.shippingfirstName.clear();
+        editShippingAddressPage.shippingfirstName.sendKeys("Gulcin");
 
         //enter last name
-        homePage.shippinglastName.clear();
-        homePage.shippinglastName.sendKeys("Selcuk");
+        editShippingAddressPage.shippinglastName.clear();
+        editShippingAddressPage.shippinglastName.sendKeys("Selcuk");
 
-        Select select=new Select(homePage.shippingCountryDropdown);
+        Select select=new Select(editShippingAddressPage.shippingCountryDropdown);
         select.selectByVisibleText("Turkey");
         waitFor(1);
 
-        homePage.shippingAddress.clear();
-        homePage.shippingAddress.sendKeys("13 Leeds Lane");
+        editShippingAddressPage.shippingAddress.clear();
+        editShippingAddressPage.shippingAddress.sendKeys("13 Leeds Lane");
 
-        homePage.shippingPostcode.clear();
-        homePage.shippingPostcode.sendKeys("21420");
+        editShippingAddressPage.shippingPostcode.clear();
+        editShippingAddressPage.shippingPostcode.sendKeys("21420");
 
-        homePage.shippingCity.clear();
-        homePage.shippingCity.sendKeys("Merkez");
+        editShippingAddressPage.shippingCity.clear();
+        editShippingAddressPage.shippingCity.sendKeys("Merkez");
 
-        Select select1=new Select(homePage.shippingStateDropdown);
+        Select select1=new Select(editShippingAddressPage.shippingStateDropdown);
         select1.selectByVisibleText("Yalova");
         waitFor(2);
-
 
 
 
