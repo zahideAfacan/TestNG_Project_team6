@@ -31,7 +31,7 @@ public class US_21_TC01 {
             //Given user goes to "https://allovercommerce.com" page
             HomePage_m1 homePageM1 = new HomePage_m1();
             MyAccount_m1 myAccount_m1=new MyAccount_m1();
-            CouponPage_m1 couponPage_m1=new CouponPage_m1();
+            CouponPage_m1 couponPage_m1 =new CouponPage_m1();
             Driver.getDriver().get(ConfigReader.getProperty("url_allover_commerce"));
 
 

@@ -12,6 +12,7 @@ public class CouponPage_m1 {
 
     }
 
+
     @FindBy(xpath="//input[@name='coupon_code']")
     public WebElement couponCode;
 
@@ -20,3 +21,16 @@ public class CouponPage_m1 {
 
     
 }
+
+
+
+
+
+
+
+
+
+
+
+
+

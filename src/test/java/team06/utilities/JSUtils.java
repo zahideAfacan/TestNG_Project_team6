@@ -2,10 +2,8 @@ package team06.utilities;
 
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
-import team06.utilities.Driver;
 
 public class JSUtils {
-
     //This method will takes two parameter: WebElement, and WebDriver
     //When you pass the element, JS will click on that element
     public static void clickElementByJS(WebElement element) {
@@ -90,7 +88,8 @@ public class JSUtils {
 //        I have to do this, cause getText in this case does not return teh text in an input
     }
     public static void addBorderWithJS(WebElement element, String borderStyle){
-        JavascriptExecutor js = (JavascriptExecutor) Driver.getDriver();
+        JavascriptExecutor js = (JavascriptExecutor)Driver.getDriver();
         js.executeScript("arguments[0].style.border='"+borderStyle+"'",element);
     }
+
 }
