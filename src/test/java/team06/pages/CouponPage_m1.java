@@ -5,17 +5,14 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import team06.utilities.Driver;
 
+public class CouponPage_m1 {
 
-public class HomePage {
-
-
-    public HomePage(){
+    public CouponPage_m1(){
         PageFactory.initElements(Driver.getDriver(),this);
 
     }
-    @FindBy(xpath = "//input[@type='search']")
-    public WebElement search;
 
+<<<<<<< HEAD:src/test/java/team06/pages/HomePage.java
     @FindBy(xpath = "//i[@class='w-icon-search']")
     public WebElement searchButton;
 
@@ -69,3 +66,27 @@ public class HomePage {
     public WebElement orderCompleted;
 
 }
+=======
+
+    @FindBy(xpath="//input[@name='coupon_code']")
+    public WebElement couponCode;
+
+    @FindBy(xpath="//button[@name='apply_coupon']")
+    public WebElement applyCoupon;
+
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+>>>>>>> master:src/test/java/team06/pages/CouponPage_m1.java
