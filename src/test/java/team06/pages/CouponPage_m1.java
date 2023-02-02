@@ -5,15 +5,32 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import team06.utilities.Driver;
 
+public class CouponPage_m1 {
 
-public class HomePage {
-
-
-    public HomePage(){
+    public CouponPage_m1(){
         PageFactory.initElements(Driver.getDriver(),this);
 
     }
-    @FindBy(xpath = "//input[@type='search']")
-    public WebElement search;
 
+
+    @FindBy(xpath="//input[@name='coupon_code']")
+    public WebElement couponCode;
+
+    @FindBy(xpath="//button[@name='apply_coupon']")
+    public WebElement applyCoupon;
+
+    
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
