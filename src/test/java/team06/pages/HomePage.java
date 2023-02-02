@@ -12,7 +12,7 @@ public class HomePage {
     }
 
     @FindBy(linkText = "Sign In")
-        public WebElement signIn;
+    public WebElement signIn;
 
 
     @FindBy(linkText = "My Account")
