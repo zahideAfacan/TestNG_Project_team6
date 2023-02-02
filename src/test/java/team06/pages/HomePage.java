@@ -18,5 +18,11 @@ public class HomePage {
     @FindBy(linkText = "My Account")
     public WebElement myAccount;
 
+    @FindBy(linkText = "Register")
+    public WebElement registerButton;
+
+    @FindBy(xpath = "//input[@type='search']")
+    public WebElement search;
+
 
 }
