@@ -29,5 +29,11 @@ public class ProductPage_m1 {
     @FindBy(id = "is_downloadable")
     public WebElement downloadable;
 
+    @FindBy(id = "regular_price")
+    public WebElement priceBox;
+
+    @FindBy(id = "sale_price")
+    public WebElement salePriceBox;
+
 }
 
