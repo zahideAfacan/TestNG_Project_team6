@@ -3,7 +3,9 @@ package team06.tests.US_07;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import team06.pages.ComparingPage;
+
 import team06.pages.HomePage_m1;
+
 import team06.utilities.ConfigReader;
 import team06.utilities.Driver;
 import team06.utilities.JSUtils;
