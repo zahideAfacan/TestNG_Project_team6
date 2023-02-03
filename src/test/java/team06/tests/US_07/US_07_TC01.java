@@ -3,7 +3,7 @@ package team06.tests.US_07;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import team06.pages.ComparingPage;
-import team06.pages.HomePage;
+import team06.pages.HomePage_m1;
 import team06.utilities.ConfigReader;
 import team06.utilities.Driver;
 import team06.utilities.JSUtils;
@@ -18,7 +18,7 @@ User should be able to compare selected items. (Compare)
 
  */
 
-   // US_TC_01
+   // US_07_TC01
 
 
 @Test
@@ -28,15 +28,16 @@ User should be able to compare selected items. (Compare)
 
 
     //1-	User goes to https://allovercommerce.com/
-    HomePage homePage = new HomePage();
+    HomePage_m1 homePageM1 = new HomePage_m1();
     Driver.getDriver().get(ConfigReader.getProperty("url_allover_commerce"));
 
+
     //2- And user searchs for "women" on search box
-    homePage.search.sendKeys("women");
+    homePageM1.search.sendKeys("women");
     ReusableMethods.waitFor(2);
 
     //3- And user clicks on search button
-    JSUtils.clickElementByJS(homePage.searchButton);
+    JSUtils.clickElementByJS(homePageM1.searchButton);
     ReusableMethods.waitFor(2);
 
     // 4-	Click to the Compare button product-1
@@ -51,11 +52,11 @@ User should be able to compare selected items. (Compare)
     ReusableMethods.waitFor(2);
 
     // 6-  And user searchs for "man" on search box
-    homePage.search.sendKeys("man");
+    homePageM1.search.sendKeys("man");
     ReusableMethods.waitFor(2);
 
     // 7- And user clicks on search button
-    JSUtils.clickElementByJS(homePage.searchButton);
+    JSUtils.clickElementByJS(homePageM1.searchButton);
     ReusableMethods.waitFor(2);
 
     // 8-	Click to the Compare button product-3
@@ -83,11 +84,11 @@ User should be able to compare selected items. (Compare)
 
 
     // 13 - And user searchs for "women" on search box
-    homePage.search.sendKeys("women");
+    homePageM1.search.sendKeys("women");
     ReusableMethods.waitFor(2);
 
     // 14 - And user clicks on search button
-    JSUtils.clickElementByJS(homePage.searchButton);
+    JSUtils.clickElementByJS(homePageM1.searchButton);
     ReusableMethods.waitFor(2);
 
     // 15-	Click to the Compare button product-1
