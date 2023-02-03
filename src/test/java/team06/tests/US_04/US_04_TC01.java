@@ -15,14 +15,14 @@ import static team06.utilities.ReusableMethods.waitFor;
 public class US_04_TC01 {
     @Test
     public void US04_TC01Test(){
-        HomePage homePage=new HomePage();
+        HomePage_m1 homePage_m1=new HomePage_m1();
         LoginPage loginPage=new LoginPage();
         MyAccountPage myAccountPage=new MyAccountPage();
         EditShippingAddressPage editShippingAddressPage=new EditShippingAddressPage();
         AddressesPage addressesPage=new AddressesPage();
         Driver.getDriver().get(ConfigReader.getProperty("url_allover_commerce"));
 
-        homePage.signIn.click();
+        homePage_m1.signInHome.click();
         loginPage.username.sendKeys(ConfigReader.getProperty("allover_commerce_username"));
         loginPage.password.sendKeys(ConfigReader.getProperty("allover_commerce_password"));
         loginPage.signInButton.click();
@@ -36,7 +36,7 @@ public class US_04_TC01 {
         actions.sendKeys(Keys.END).perform();
         waitFor(2);
         //locate my account and click
-        homePage.myAccount.click();
+      //  homePage_m1.myAccount.click();
         waitFor(2);
 
         //Note: Also we can click by using JSExecutor
