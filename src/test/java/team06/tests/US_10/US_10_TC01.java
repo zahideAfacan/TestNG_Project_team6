@@ -63,6 +63,8 @@ public class US_10_TC01 {
         String passwordStrength4= Driver.getDriver().findElement(By.id("password_strength")).getText();
         assertEquals(passwordStrength4,"Strong");
 
+        Driver.closeDriver();
+
     }
 }
 

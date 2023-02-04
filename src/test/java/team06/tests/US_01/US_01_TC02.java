@@ -47,7 +47,7 @@ public class US_01_TC02 {
         assertEquals(validationMessage,"");
         assertTrue(Driver.getDriver().findElement(By.linkText("Sign Out")).isDisplayed());
 
-
+        Driver.closeDriver();
     }
 }
 

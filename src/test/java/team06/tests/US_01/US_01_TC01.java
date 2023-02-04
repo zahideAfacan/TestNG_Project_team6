@@ -52,6 +52,7 @@ public class US_01_TC01 {
         assertEquals(validationMessage,"Please check this box if you want to proceed.");
         assertTrue(Driver.getDriver().findElement(By.linkText("Register")).isDisplayed());
 
+        Driver.closeDriver();
 
     }
 }

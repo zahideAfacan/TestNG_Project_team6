@@ -135,5 +135,6 @@ public class US_19_TC01 {
         assertTrue(myOrdersPageKU.orderStatus.isDisplayed());
         assertTrue(myOrdersPageKU.orderTotal.isDisplayed());
 
+        Driver.closeDriver();
     }
 }
