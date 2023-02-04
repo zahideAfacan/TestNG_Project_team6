@@ -19,4 +19,6 @@ public class LoginPage {
 
     @FindBy(css = "button[name='login']")
     public WebElement signInButton;
+
+
 }
