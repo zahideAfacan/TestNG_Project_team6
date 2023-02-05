@@ -26,8 +26,8 @@ public class US_11_TC01 {
         Actions actions = new Actions(Driver.getDriver());
 
         Driver.getDriver().get(ConfigReader.getProperty("url_allover_commerce"));
-//      clik on Sign In button
-//        ReusableMethods.waitForClickablility(homePage.signIn);
+//      click on Sign In button
+//      ReusableMethods.waitForClickablility(homePage.signIn);
         JSUtils.clickElementByJS(homePage.signIn);
 
         //user enter email adress in the email input
