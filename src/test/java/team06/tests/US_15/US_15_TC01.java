@@ -96,6 +96,6 @@ public class US_15_TC01 {
         JSUtils.clickElementByJS(advancedPageM1.advanced);
 
         //close driver
-        Driver.closeDriver();
+      //  Driver.closeDriver();
 }
 }

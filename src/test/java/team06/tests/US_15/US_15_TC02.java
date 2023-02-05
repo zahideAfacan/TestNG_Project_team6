@@ -29,12 +29,12 @@ public class US_15_TC02 {
 
         Driver.getDriver().get(ConfigReader.getProperty("url_allover_commerce"));
 
-
+        HomePage homePage=new HomePage();
         MyAccount_m1 myAccountM1 = new MyAccount_m1();
         InventoryPage_m1 inventoryPageM1 = new InventoryPage_m1();
 
         //  click on "my Account"
-        JSUtils.clickElementByJS(myAccountM1.myAccountButton);
+        homePage.signIn.click();
 
         //  enter the username
         myAccountM1.username.sendKeys("gulcin");
