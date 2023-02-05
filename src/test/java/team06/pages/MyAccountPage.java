@@ -49,6 +49,14 @@ public class MyAccountPage {
     @FindBy(linkText = "Logout")
     public WebElement Logout;
 
+    //store manager page "Coupons" button
+    @FindBy(linkText = "Coupons")
+    public WebElement Coupons;
+
+    //store manager=>Coupons=>Add New
+    @FindBy(linkText = "Add New")
+    public WebElement AddNew;
+
 
 
 
