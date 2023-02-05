@@ -19,5 +19,10 @@ public class CouponPage_m1 {
     @FindBy(xpath="//button[@name='apply_coupon']")
     public WebElement applyCoupon;
 
+    @FindBy(xpath="//ul[@role='alert']")
+    public WebElement alertCoupon;
+
+
+
 
 }
