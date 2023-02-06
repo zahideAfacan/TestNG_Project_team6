@@ -1,5 +1,6 @@
 package team06.tests.US_21;
 
+import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import team06.pages.BillingPage_m1;
@@ -82,10 +83,12 @@ public class US_21_TC01 {
             //enter the generated coupon
             couponPage_m1.couponCode.sendKeys("a1b2c3");
 
-            //verify that coupon is applied (waiting code from US_20)
-
             //click the "apply coupon"
             couponPage_m1.applyCoupon.click();
+
+            //verify that coupon is applied (waiting code from US_20)
+            String alert= couponPage_m1.alertCoupon.getText();
+            Assert.assertTrue(alert.contains("Sorry, this coupon is not applicable to selected products."));
 
             //5-User should be able to see the Billing Address in order to purchase the products
 
